@@ -1,0 +1,30 @@
+#include <iostream.h>
+#include <conio.h>
+#include <stdlib.h>
+
+main() {
+	//Declaracion de la variable sueldo quien tomara el valor del usuario diga
+   double sueldo;
+   cout<<"Ingrese el sueldo"<<endl;
+   cin>>sueldo;
+
+
+   //La primera condicion, rango de los sueldos de 5001 a 9999
+   //Sueldo normal
+
+   if (sueldo >= 5000 && sueldo <= 10000){
+   	cout<<"Usted tiene un sueldo normal"<<endl;
+   }
+
+   //Segunda condicion, si el sueldo agregado es menor de 4000 (5999 a 0)
+   else if (sueldo < 5000) {
+   	cout<<"Su sueldo es bajo, pero es el promedio"<<endl;
+   }
+   //Sino cuando el sueldo sea mayor de 10000 tirara el comentario
+   else {
+   	cout<<"Su sueldo es mayor que el promedio"<<endl;
+   }
+
+    system("pause");
+    return 0;
+}
